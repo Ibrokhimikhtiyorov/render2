@@ -3,6 +3,7 @@ from __future__ import annotations
 import asyncio
 import html
 import logging
+import os
 import re
 import sys
 from datetime import datetime
@@ -976,6 +977,43 @@ async def handle_answer(callback: CallbackQuery) -> None:
         await callback.answer("Javob qabul qilinmadi.", show_alert=True)
 
 
+async def _handle_health_request(
+    reader: asyncio.StreamReader, writer: asyncio.StreamWriter
+) -> None:
+    try:
+        await asyncio.wait_for(reader.readuntil(b"\r\n\r\n"), timeout=5)
+    except (asyncio.TimeoutError, asyncio.IncompleteReadError, ConnectionError):
+        pass
+    body = b"OK"
+    response = (
+        b"HTTP/1.1 200 OK\r\n"
+        b"Content-Type: text/plain; charset=utf-8\r\n"
+        b"Content-Length: " + str(len(body)).encode() + b"\r\n"
+        b"Connection: close\r\n\r\n" + body
+    )
+    try:
+        writer.write(response)
+        await writer.drain()
+    except ConnectionError:
+        pass
+    finally:
+        writer.close()
+
+
+async def start_health_server() -> asyncio.AbstractServer | None:
+    raw_port = os.getenv("PORT", "").strip()
+    if not raw_port:
+        return None
+    try:
+        port = int(raw_port)
+    except ValueError:
+        logger.warning("PORT noto‘g‘ri: %r. Health server ishga tushmadi.", raw_port)
+        return None
+    server = await asyncio.start_server(_handle_health_request, "0.0.0.0", port)
+    logger.info("Health server %s portda ishga tushdi.", port)
+    return server
+
+
 async def main() -> None:
     global settings, db, bot
 
@@ -1031,6 +1069,7 @@ async def main() -> None:
     )
 
     await set_commands(bot)
+    health_server = await start_health_server()
     scheduler.start()
     logger.info(
         "Bot ishga tushdi. Quiz: %02d:%02d, e’lon: %02d:%02d, timezone=%s",
@@ -1045,6 +1084,9 @@ async def main() -> None:
         await dispatcher.start_polling(bot)
     finally:
         scheduler.shutdown(wait=False)
+        if health_server is not None:
+            health_server.close()
+            await health_server.wait_closed()
         if background_tasks:
             for task in list(background_tasks):
                 task.cancel()
