@@ -1,0 +1,11 @@
+.env
+venv/
+__pycache__/
+*.py[cod]
+*.db
+*.db-shm
+*.db-wal
+logs/
+*.log
+.pytest_cache/
+main.old.py

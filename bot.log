@@ -1,0 +1,458 @@
+2026-10-26 21:58:26,932 | INFO | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 21:58:26,932 | INFO | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 21:58:26,933 | INFO | Added job "reminder" to job store "default"
+2026-10-26 21:58:26,933 | INFO | Added job "start_quiz" to job store "default"
+2026-10-26 21:58:26,933 | INFO | Scheduler started
+2026-10-26 21:58:26,933 | INFO | Bot ishga tushdi. Vaqt zonasi Asia/Tashkent.
+2026-10-26 21:58:26,934 | INFO | Start polling
+2026-10-26 21:58:29,709 | INFO | Run polling for bot @iqwertyuio_bot id=8863368543 - 'birinchibot'
+2026-10-26 21:58:30,636 | INFO | Update id=170835528 is not handled. Duration 9 ms by bot id=8863368543
+2026-10-26 21:58:30,638 | INFO | Update id=170835526 is not handled. Duration 11 ms by bot id=8863368543
+2026-10-26 21:58:30,638 | INFO | Update id=170835522 is not handled. Duration 13 ms by bot id=8863368543
+2026-10-26 21:58:30,639 | INFO | Update id=170835525 is not handled. Duration 12 ms by bot id=8863368543
+2026-10-26 21:58:30,639 | INFO | Update id=170835520 is not handled. Duration 16 ms by bot id=8863368543
+2026-10-26 21:58:30,639 | INFO | Update id=170835523 is not handled. Duration 13 ms by bot id=8863368543
+2026-10-26 21:58:30,639 | INFO | Update id=170835521 is not handled. Duration 15 ms by bot id=8863368543
+2026-10-26 21:58:30,640 | INFO | Update id=170835524 is not handled. Duration 13 ms by bot id=8863368543
+2026-10-26 21:58:30,640 | INFO | Update id=170835527 is not handled. Duration 12 ms by bot id=8863368543
+2026-10-26 21:58:30,640 | INFO | Update id=170835519 is not handled. Duration 17 ms by bot id=8863368543
+2026-10-26 22:01:28,295 | INFO | Polling stopped
+2026-10-26 22:01:28,298 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-10-26 22:01:28,298 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8863368543)
+2026-10-26 22:01:28,554 | INFO | Scheduler has been shut down
+2026-10-26 22:01:28,554 | INFO | Polling stopped for bot @iqwertyuio_bot id=8863368543 - 'birinchibot'
+2026-10-26 22:01:33,917 | INFO | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 22:01:33,918 | INFO | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 22:01:33,918 | INFO | Added job "reminder" to job store "default"
+2026-10-26 22:01:33,919 | INFO | Added job "start_quiz" to job store "default"
+2026-10-26 22:01:33,919 | INFO | Scheduler started
+2026-10-26 22:01:33,919 | INFO | Bot ishga tushdi. Vaqt zonasi Asia/Tashkent.
+2026-10-26 22:01:33,919 | INFO | Start polling
+2026-10-26 22:01:40,793 | INFO | Run polling for bot @iqwertyuio_bot id=8863368543 - 'birinchibot'
+2026-10-26 22:02:58,940 | INFO | Update id=170835529 is handled. Duration 768 ms by bot id=8863368543
+2026-10-26 22:03:07,160 | INFO | Update id=170835530 is handled. Duration 3920 ms by bot id=8863368543
+2026-10-26 22:03:11,481 | INFO | Update id=170835531 is handled. Duration 284 ms by bot id=8863368543
+2026-10-26 22:03:41,792 | INFO | Update id=170835532 is not handled. Duration 5 ms by bot id=8863368543
+2026-10-26 22:03:52,567 | INFO | Update id=170835533 is handled. Duration 1121 ms by bot id=8863368543
+2026-10-26 22:04:16,487 | ERROR | Guruhga xabar yuborilmadi
+Traceback (most recent call last):
+  File "C:\Users\Legion\Desktop\лоьоль\main.py", line 226, in group_message
+    await bot.send_message(GROUP_CHAT_ID, text)
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\bot.py", line 3013, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-26 22:04:16,499 | INFO | Update id=170835534 is handled. Duration 9210 ms by bot id=8863368543
+2026-10-26 22:04:18,712 | ERROR | Guruhga xabar yuborilmadi
+Traceback (most recent call last):
+  File "C:\Users\Legion\Desktop\лоьоль\main.py", line 226, in group_message
+    await bot.send_message(GROUP_CHAT_ID, text)
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\bot.py", line 3013, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-26 22:04:18,718 | INFO | Update id=170835535 is handled. Duration 1161 ms by bot id=8863368543
+2026-10-26 22:04:22,804 | INFO | Update id=170835536 is handled. Duration 298 ms by bot id=8863368543
+2026-10-26 22:04:32,834 | INFO | Update id=170835537 is handled. Duration 1444 ms by bot id=8863368543
+2026-10-26 22:04:40,394 | INFO | Update id=170835538 is handled. Duration 1578 ms by bot id=8863368543
+2026-10-26 22:05:14,819 | INFO | Update id=170835539 is handled. Duration 403 ms by bot id=8863368543
+2026-10-26 22:06:01,080 | INFO | Update id=170835540 is handled. Duration 301 ms by bot id=8863368543
+2026-10-26 22:06:28,865 | INFO | Update id=170835541 is handled. Duration 238 ms by bot id=8863368543
+2026-10-26 22:06:37,076 | INFO | Update id=170835542 is handled. Duration 337 ms by bot id=8863368543
+2026-10-26 22:06:41,090 | INFO | Update id=170835543 is handled. Duration 733 ms by bot id=8863368543
+2026-10-26 22:06:50,617 | INFO | Update id=170835544 is handled. Duration 335 ms by bot id=8863368543
+2026-10-26 22:07:15,382 | INFO | Update id=170835545 is handled. Duration 306 ms by bot id=8863368543
+2026-10-26 22:07:22,602 | INFO | Update id=170835546 is handled. Duration 249 ms by bot id=8863368543
+2026-10-26 22:07:30,037 | INFO | Update id=170835547 is handled. Duration 309 ms by bot id=8863368543
+2026-10-26 22:07:44,073 | INFO | Update id=170835548 is handled. Duration 493 ms by bot id=8863368543
+2026-10-26 22:07:47,205 | ERROR | Guruhga xabar yuborilmadi
+Traceback (most recent call last):
+  File "C:\Users\Legion\Desktop\лоьоль\main.py", line 226, in group_message
+    await bot.send_message(GROUP_CHAT_ID, text)
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\bot.py", line 3013, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-26 22:07:47,210 | INFO | Update id=170835549 is handled. Duration 442 ms by bot id=8863368543
+2026-10-26 22:12:32,491 | INFO | Update id=170835550 is handled. Duration 572 ms by bot id=8863368543
+2026-10-26 22:12:43,528 | INFO | Update id=170835551 is handled. Duration 198 ms by bot id=8863368543
+2026-10-26 22:12:54,401 | INFO | Update id=170835552 is handled. Duration 1464 ms by bot id=8863368543
+2026-10-26 22:13:04,414 | ERROR | Guruhga xabar yuborilmadi
+Traceback (most recent call last):
+  File "C:\Users\Legion\Desktop\лоьоль\main.py", line 226, in group_message
+    await bot.send_message(GROUP_CHAT_ID, text)
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\bot.py", line 3013, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-26 22:13:04,420 | INFO | Update id=170835553 is handled. Duration 3928 ms by bot id=8863368543
+2026-10-26 22:15:21,418 | INFO | Polling stopped
+2026-10-26 22:15:21,422 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-10-26 22:15:21,423 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8863368543)
+2026-10-26 22:15:21,688 | INFO | Scheduler has been shut down
+2026-10-26 22:15:21,690 | INFO | Polling stopped for bot @iqwertyuio_bot id=8863368543 - 'birinchibot'
+2026-10-26 22:15:28,188 | INFO | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 22:15:28,189 | INFO | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 22:15:28,190 | INFO | Added job "reminder" to job store "default"
+2026-10-26 22:15:28,190 | INFO | Added job "start_quiz" to job store "default"
+2026-10-26 22:15:28,190 | INFO | Scheduler started
+2026-10-26 22:15:28,190 | INFO | Bot ishga tushdi (30 talik savol rejimi). Vaqt zonasi Asia/Tashkent.
+2026-10-26 22:15:28,191 | INFO | Start polling
+2026-10-26 22:15:30,258 | INFO | Run polling for bot @iqwertyuio_bot id=8863368543 - 'birinchibot'
+2026-10-26 22:15:36,467 | INFO | Update id=170835554 is handled. Duration 2223 ms by bot id=8863368543
+2026-10-26 22:15:41,870 | INFO | Update id=170835555 is handled. Duration 472 ms by bot id=8863368543
+2026-10-26 22:15:49,574 | INFO | Update id=170835556 is handled. Duration 656 ms by bot id=8863368543
+2026-10-26 22:16:00,953 | INFO | Update id=170835557 is handled. Duration 1533 ms by bot id=8863368543
+2026-10-26 22:16:11,584 | ERROR | Guruhga xabar yuborilmadi
+Traceback (most recent call last):
+  File "C:\Users\Legion\Desktop\лоьоль\main.py", line 226, in group_message
+    await bot.send_message(GROUP_CHAT_ID, text)
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\bot.py", line 3013, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-26 22:16:11,600 | INFO | Update id=170835558 is handled. Duration 192 ms by bot id=8863368543
+2026-10-26 22:16:35,008 | ERROR | Guruhga xabar yuborilmadi
+Traceback (most recent call last):
+  File "C:\Users\Legion\Desktop\лоьоль\main.py", line 226, in group_message
+    await bot.send_message(GROUP_CHAT_ID, text)
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\bot.py", line 3013, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-26 22:16:35,011 | INFO | Update id=170835559 is handled. Duration 1362 ms by bot id=8863368543
+2026-10-27 01:44:33,315 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-10-27 01:44:33,380 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8863368543)
+2026-10-27 07:48:59,185 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-10-27 07:48:59,186 | WARNING | Sleep for 1.187716 seconds and try again... (tryings = 1, bot id = 8863368543)
+2026-10-27 07:49:11,744 | INFO | Connection established (tryings = 2, bot id = 8863368543)
+2026-10-27 10:07:51,673 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-10-27 10:07:51,821 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8863368543)
+2026-10-27 10:08:04,268 | INFO | Connection established (tryings = 1, bot id = 8863368543)
+2026-10-27 16:45:24,858 | INFO | Polling stopped
+2026-10-27 16:45:24,859 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-10-27 16:45:24,859 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8863368543)
+2026-10-27 16:45:25,123 | INFO | Scheduler has been shut down
+2026-10-27 16:45:25,124 | INFO | Polling stopped for bot @iqwertyuio_bot id=8863368543 - 'birinchibot'
+2026-10-27 17:18:16,327 | INFO | __main__ | Bot ishga tushmoqda...
+2026-10-27 17:18:16,340 | INFO | __main__ | Ma'lumotlar bazasi tayyorlandi
+2026-10-27 17:18:16,346 | INFO | apscheduler.scheduler | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-27 17:18:16,347 | INFO | apscheduler.scheduler | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-27 17:18:16,348 | INFO | apscheduler.scheduler | Added job "send_reminder" to job store "default"
+2026-10-27 17:18:16,349 | INFO | apscheduler.scheduler | Added job "start_daily_quiz" to job store "default"
+2026-10-27 17:18:16,349 | INFO | apscheduler.scheduler | Scheduler started
+2026-10-27 17:18:16,349 | INFO | __main__ | Scheduler ishga tushdi - Eslatma: 20:00, Quiz: 20:05 (Asia/Tashkent)
+2026-10-27 17:18:16,349 | INFO | __main__ | Bot muvaffaqiyatli ishga tushdi!
+2026-10-27 17:18:16,349 | INFO | aiogram.dispatcher | Start polling
+2026-10-27 17:18:44,426 | INFO | aiogram.dispatcher | Polling stopped
+2026-10-27 17:18:44,426 | INFO | __main__ | Bot to'xtatilmoqda...
+2026-10-27 17:18:44,426 | INFO | apscheduler.scheduler | Scheduler has been shut down
+2026-10-27 17:18:44,691 | INFO | __main__ | Bot to'xtatildi
+2026-10-28 08:12:05,689 | INFO | __main__ | Bot ishga tushmoqda...
+2026-10-28 08:12:05,712 | INFO | __main__ | Ma'lumotlar bazasi tayyorlandi
+2026-10-28 08:12:05,742 | INFO | apscheduler.scheduler | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-28 08:12:05,743 | INFO | apscheduler.scheduler | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-28 08:12:05,748 | INFO | apscheduler.scheduler | Added job "send_reminder" to job store "default"
+2026-10-28 08:12:05,750 | INFO | apscheduler.scheduler | Added job "start_daily_quiz" to job store "default"
+2026-10-28 08:12:05,751 | INFO | apscheduler.scheduler | Scheduler started
+2026-10-28 08:12:05,751 | INFO | __main__ | Scheduler ishga tushdi - Eslatma: 20:00, Quiz: 20:05 (Asia/Tashkent)
+2026-10-28 08:12:05,752 | INFO | __main__ | Bot muvaffaqiyatli ishga tushdi!
+2026-10-28 08:12:05,752 | INFO | aiogram.dispatcher | Start polling
+2026-10-28 08:12:08,488 | INFO | aiogram.dispatcher | Run polling for bot @iqwertyuio_bot id=8863368543 - 'birinchibot'
+2026-10-28 08:12:12,746 | INFO | aiogram.event | Update id=170835564 is handled. Duration 3219 ms by bot id=8863368543
+2026-10-28 08:12:12,750 | INFO | aiogram.event | Update id=170835562 is handled. Duration 3226 ms by bot id=8863368543
+2026-10-28 08:12:12,766 | INFO | aiogram.event | Update id=170835561 is handled. Duration 3242 ms by bot id=8863368543
+2026-10-28 08:12:12,767 | INFO | aiogram.event | Update id=170835560 is handled. Duration 3246 ms by bot id=8863368543
+2026-10-28 08:12:12,795 | INFO | aiogram.event | Update id=170835563 is handled. Duration 3268 ms by bot id=8863368543
+2026-10-28 08:12:12,810 | INFO | aiogram.event | Update id=170835565 is handled. Duration 3281 ms by bot id=8863368543
+2026-10-28 08:12:24,242 | INFO | aiogram.event | Update id=170835566 is handled. Duration 785 ms by bot id=8863368543
+2026-10-28 08:12:28,749 | INFO | aiogram.event | Update id=170835567 is handled. Duration 1001 ms by bot id=8863368543
+2026-10-28 08:12:32,820 | INFO | aiogram.event | Update id=170835568 is handled. Duration 581 ms by bot id=8863368543
+2026-10-28 08:35:47,596 | INFO | __main__ | Bot ishga tushmoqda...
+2026-10-28 08:35:47,597 | INFO | __main__ | Ma'lumotlar bazasi tayyorlandi
+2026-10-28 08:35:47,603 | INFO | apscheduler.scheduler | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-28 08:35:47,603 | INFO | apscheduler.scheduler | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-28 08:35:47,604 | INFO | apscheduler.scheduler | Added job "send_reminder" to job store "default"
+2026-10-28 08:35:47,604 | INFO | apscheduler.scheduler | Added job "start_daily_quiz" to job store "default"
+2026-10-28 08:35:47,604 | INFO | apscheduler.scheduler | Scheduler started
+2026-10-28 08:35:47,604 | INFO | __main__ | Scheduler ishga tushdi - Eslatma: 20:00, Quiz: 20:05 (Asia/Tashkent)
+2026-10-28 08:35:47,605 | INFO | __main__ | Bot muvaffaqiyatli ishga tushdi!
+2026-10-28 08:35:47,605 | INFO | aiogram.dispatcher | Start polling
+2026-10-28 08:35:54,740 | INFO | aiogram.dispatcher | Run polling for bot @iqwertyuio_bot id=8863368543 - 'birinchibot'
+2026-10-28 08:36:01,996 | INFO | aiogram.event | Update id=170835569 is not handled. Duration 4833 ms by bot id=8863368543
+2026-10-28 08:36:01,997 | ERROR | aiogram.event | Cause exception while process update id=170835569 by bot id=8863368543
+TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+Traceback (most recent call last):
+  File "C:\Users\Legion\AppData\Local\Programs\Python\Python314\Lib\asyncio\windows_events.py", line 463, in finish_socket_func
+    return ov.getresult()
+           ~~~~~~~~~~~~^^
+OSError: [WinError 64] Указанное сетевое имя более недоступно
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiohttp\connector.py", line 1337, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\AppData\Local\Programs\Python\Python314\Lib\asyncio\base_events.py", line 1199, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\AppData\Local\Programs\Python\Python314\Lib\asyncio\base_events.py", line 1232, in _create_connection_transport
+    await waiter
+  File "C:\Users\Legion\AppData\Local\Programs\Python\Python314\Lib\asyncio\proactor_events.py", line 287, in _loop_reading
+    length = fut.result()
+  File "C:\Users\Legion\AppData\Local\Programs\Python\Python314\Lib\asyncio\windows_events.py", line 807, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\Users\Legion\AppData\Local\Programs\Python\Python314\Lib\asyncio\windows_events.py", line 467, in finish_socket_func
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Указанное сетевое имя более недоступно
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 167, in make_request
+    async with session.post(
+               ~~~~~~~~~~~~^
+        url,
+        ^^^^
+        data=form,
+        ^^^^^^^^^^
+        timeout=self.timeout if timeout is None else timeout,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as resp:
+    ^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiohttp\client.py", line 1756, in __aenter__
+    self._resp: _RetType_co = await self._coro
+                              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiohttp\client.py", line 900, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiohttp\client.py", line 854, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiohttp\connector.py", line 665, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiohttp\connector.py", line 1263, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiohttp\connector.py", line 1641, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiohttp\connector.py", line 1610, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiohttp\connector.py", line 1345, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 321, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 284, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 172, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 164, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 200, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 172, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 164, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 192, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\main.py", line 330, in cmd_rating
+    await message.answer(
+    ...<3 lines>...
+    )
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Legion\Desktop\лоьоль\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 176, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}") from e
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2026-10-28 08:36:02,708 | INFO | aiogram.event | Update id=170835571 is handled. Duration 5545 ms by bot id=8863368543
+2026-10-28 08:36:03,990 | INFO | aiogram.event | Update id=170835572 is handled. Duration 6826 ms by bot id=8863368543
+2026-10-28 08:36:04,030 | INFO | aiogram.event | Update id=170835570 is handled. Duration 6867 ms by bot id=8863368543
+2026-10-28 09:12:09,040 | ERROR | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-10-28 09:12:09,043 | WARNING | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8863368543)
+2026-10-28 09:12:10,597 | INFO | aiogram.dispatcher | Connection established (tryings = 1, bot id = 8863368543)
+2026-10-28 09:12:11,136 | INFO | aiogram.event | Update id=170835574 is handled. Duration 538 ms by bot id=8863368543
+2026-10-28 09:12:11,156 | INFO | aiogram.event | Update id=170835575 is handled. Duration 556 ms by bot id=8863368543
+2026-10-28 09:12:11,187 | INFO | aiogram.event | Update id=170835573 is handled. Duration 589 ms by bot id=8863368543
+2026-10-28 09:12:11,475 | INFO | aiogram.event | Update id=170835576 is handled. Duration 651 ms by bot id=8863368543
+2026-10-28 10:31:36,397 | ERROR | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-10-28 10:31:36,415 | WARNING | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8863368543)
+2026-10-28 10:31:48,086 | INFO | aiogram.dispatcher | Connection established (tryings = 1, bot id = 8863368543)
+2026-10-28 17:12:45,878 | INFO | __main__ | Bot ishga tushmoqda...
+2026-10-28 17:12:45,890 | INFO | __main__ | Ma'lumotlar bazasi tayyorlandi
+2026-10-28 17:12:45,894 | INFO | apscheduler.scheduler | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-28 17:12:45,894 | INFO | apscheduler.scheduler | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-28 17:12:45,896 | INFO | apscheduler.scheduler | Added job "send_reminder" to job store "default"
+2026-10-28 17:12:45,896 | INFO | apscheduler.scheduler | Added job "start_daily_quiz" to job store "default"
+2026-10-28 17:12:45,896 | INFO | apscheduler.scheduler | Scheduler started
+2026-10-28 17:12:45,896 | INFO | __main__ | Scheduler ishga tushdi - Eslatma: 20:00, Quiz: 20:05 (Asia/Tashkent)
+2026-10-28 17:12:45,896 | INFO | __main__ | Bot muvaffaqiyatli ishga tushdi!
+2026-10-28 17:12:45,896 | INFO | aiogram.dispatcher | Start polling
+2026-10-28 17:12:46,531 | INFO | aiogram.dispatcher | Run polling for bot @iqwertyuio_bot id=8863368543 - 'birinchibot'
+2026-10-28 17:16:09,105 | INFO | __main__ | Bot ishga tushmoqda...
+2026-10-28 17:16:09,106 | INFO | __main__ | Ma'lumotlar bazasi tayyorlandi
+2026-10-28 17:16:09,108 | INFO | apscheduler.scheduler | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-28 17:16:09,109 | INFO | apscheduler.scheduler | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-28 17:16:09,110 | INFO | apscheduler.scheduler | Added job "send_reminder" to job store "default"
+2026-10-28 17:16:09,110 | INFO | apscheduler.scheduler | Added job "start_daily_quiz" to job store "default"
+2026-10-28 17:16:09,110 | INFO | apscheduler.scheduler | Scheduler started
+2026-10-28 17:16:09,110 | INFO | __main__ | Scheduler ishga tushdi - Eslatma: 20:00, Quiz: 20:05 (Asia/Tashkent)
+2026-10-28 17:16:09,111 | INFO | __main__ | Bot muvaffaqiyatli ishga tushdi!
+2026-10-28 17:16:09,111 | INFO | aiogram.dispatcher | Start polling
+2026-10-28 17:16:09,632 | INFO | aiogram.dispatcher | Run polling for bot @iqwertyuio_bot id=8863368543 - 'birinchibot'
+2026-10-28 17:16:50,572 | INFO | aiogram.event | Update id=170835577 is handled. Duration 628 ms by bot id=8863368543
+2026-10-28 17:17:01,882 | INFO | aiogram.event | Update id=170835578 is handled. Duration 211 ms by bot id=8863368543
+2026-10-28 18:26:44,945 | ERROR | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2026-10-28 18:26:44,949 | WARNING | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8863368543)
+2026-10-28 18:26:56,522 | INFO | aiogram.dispatcher | Connection established (tryings = 1, bot id = 8863368543)
+2026-10-29 16:50:14,725 | INFO | __main__ | Bot ishga tushmoqda...
